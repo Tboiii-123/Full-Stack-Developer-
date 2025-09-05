@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lawal Hussein | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Navbar -->
+<header class="bg-white shadow-md fixed w-full top-0 z-50">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo / Name -->
+    <h1 class="text-2xl font-bold text-red-600">Lawal Hussein</h1>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-red-600">Home</a>
+      <a href="#about" class="hover:text-red-600">About</a>
+      <a href="#projects" class="hover:text-red-600">Projects</a>
+      <a href="#contact" class="hover:text-red-600">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav (hidden by default) -->
+  <nav id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-4 bg-white border-t shadow-md md:hidden">
+    <a href="#home" class="hover:text-red-600">Home</a>
+    <a href="#about" class="hover:text-red-600">About</a>
+    <a href="#projects" class="hover:text-red-600">Projects</a>
+    <a href="#contact" class="hover:text-red-600">Contact</a>
+  </nav>
+</header>
+
+
+
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 bg-gray-100 pt-28">
+  <!-- Left Side (Image) -->
+  <div class="flex-1 flex justify-center mb-6 md:mb-0" data-aos="fade-right">
+    <img src="img/hussein1.jpg" alt="Lawal Hussein"  
+         class="w-52 h-52 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full object-cover shadow-lg" id="image">
+  </div>
+
+  <!-- Right Side (Text) -->
+  <div class="flex-1 text-center md:text-left" data-aos="fade-left">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      Hi, I’m Lawal Hussein 👋
+    </h2>
+    <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto md:mx-0 mb-6">
+      A Full-Stack Developer skilled in Django, Python, React, HTML, CSS, and Tailwind CSS.  
+      I build scalable web applications with clean frontend and robust backend.
+    </p>
+    <a href="" data-aos="zoom-in" data-aos-delay="200"
+       class="inline-block px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition" id="button">
+      Download Resume
+    </a>
+  </div>
+</section>
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-red-600 mb-6" data-aos="zoom-in" >About Me</h2>
+      <p class="text-lg text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        I’m a passionate Full-Stack Developer with experience in building both frontend and backend applications. 
+        On the frontend, I craft responsive, user-friendly interfaces with HTML, CSS, JavaScript, React, and TailwindCSS. 
+        On the backend, I specialize in Django, Flask, and PostgreSQL to deliver scalable and secure web solutions. 
+        I also integrate APIs, third-party services, and implement session-based authentication.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Skills Section (Tailwind) -->
+<section id="skill" class="py-16 bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-4">Skills</h2>
+    <p class="text-center text-gray-300 mb-10">
+      I build responsive, scalable web applications using Django, JavaScript, and modern frontend tools.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Python -->
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+        <div class="flex items-center justify-between mb-1">
+          <h4 class="text-lg font-semibold">Python</h4>
+          <span class="text-sm text-gray-300">100%</span>
+        </div>
+        <p class="text-sm text-gray-300 mb-3">
+          Efficient coding with strong problem-solving and algorithm skills.
+        </p>
+        <div class="w-full h-2 bg-gray-700 rounded">
+          <div class="h-2 bg-red-500 rounded w-[100%]"></div>
+        </div>
+      </div>
+
+      <!-- Django -->
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+        <div class="flex items-center justify-between mb-1">
+          <h4 class="text-lg font-semibold">Django</h4>
+          <span class="text-sm text-gray-300">100%</span>
+        </div>
+        <p class="text-sm text-gray-300 mb-3">
+          Builds secure, database-driven web apps with RESTful APIs.
+        </p>
+        <div class="w-full h-2 bg-gray-700 rounded">
+          <div class="h-2 bg-red-500 rounded w-[100%]"></div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+        <div class="flex items-center justify-between mb-1">
+          <h4 class="text-lg font-semibold">JavaScript</h4>
+          <span class="text-sm text-gray-300">100%</span>
+        </div>
+        <p class="text-sm text-gray-300 mb-3">
+          Creates dynamic, interactive user interfaces with DOM control.
+        </p>
+        <div class="w-full h-2 bg-gray-700 rounded">
+          <div class="h-2 bg-red-500 rounded w-[100%]"></div>
+        </div>
+      </div>
+
+      <!-- React -->
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+        <div class="flex items-center justify-between mb-1">
+          <h4 class="text-lg font-semibold">React</h4>
+          <span class="text-sm text-gray-300">70%</span>
+        </div>
+        <p class="text-sm text-gray-300 mb-3">
+          Develops component-based UIs with smooth state management.
+        </p>
+        <div class="w-full h-2 bg-gray-700 rounded">
+          <div class="h-2 bg-red-500 rounded w-[70%]"></div>
+        </div>
+      </div>
+
+      <!-- Tailwind / Bootstrap -->
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+        <div class="flex items-center justify-between mb-1">
+          <h4 class="text-lg font-semibold">Tailwind / Bootstrap</h4>
+          <span class="text-sm text-gray-300">95%</span>
+        </div>
+        <p class="text-sm text-gray-300 mb-3">
+          Designs responsive layouts with modern UI components.
+        </p>
+        <div class="w-full h-2 bg-gray-700 rounded">
+          <div class="h-2 bg-red-500 rounded w-[95%]"></div>
+        </div>
+      </div>
+
+      <!-- PostgreSQL -->
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+        <div class="flex items-center justify-between mb-1">
+          <h4 class="text-lg font-semibold">PostgreSQL</h4>
+          <span class="text-sm text-gray-300">95%</span>
+        </div>
+        <p class="text-sm text-gray-300 mb-3">
+          Designs scalable databases with optimized queries.
+        </p>
+        <div class="w-full h-2 bg-gray-700 rounded">
+          <div class="h-2 bg-red-500 rounded w-[95%]"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+<section id="projects" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Back End Project</h2>
+
+    <div class="space-y-12">
+      
+<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+  <!-- Project Image -->
+  <div class="md:w-1/2 w-full">
+    <img src="img/logistics.PNG" alt="Logistics App" class="w-full h-64 object-cover">
+  </div>
+  
+  <!-- Project Details -->
+  <div class="p-6 md:w-1/2">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Logistics & Delivery System</h3>
+    <p class="text-sm text-gray-500 mb-3">Django · PostgreSQL · Chart.js · Tailwind</p>
+    
+    <!-- Overview -->
+    <p class="text-gray-700 mb-4">
+      A logistics and delivery tracking platform built with Django, featuring a 
+      real-time KPI dashboard, secure authentication, and seamless shipment management.
+    </p>
+    
+    <!-- Features -->
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+      <li>Session-based authentication for secure user & admin access</li>
+      <li>Interactive KPI dashboard powered by Chart.js</li>
+      <li>Advanced reporting & filtering for shipment analysis</li>
+      <li>Real-time delivery status tracking for transparency</li>
+      <li>Email notifications via async background tasks</li>
+      <li>35% faster performance with optimized queries</li>
+      <li>25% improved on-time delivery through live insights</li>
+    </ul>
+    
+    <a href="https://github.com/username/logistics-app" target="_blank" 
+       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
+       View on GitHub
+    </a>
+  </div>
+</div>
+
+
+<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+  <!-- Project Image -->
+  <div class="md:w-1/2 w-full">
+    <img src="img/ecom.PNG" alt="E-commerce App" class="w-full h-64 object-cover">
+  </div>
+  
+  <!-- Project Details -->
+  <div class="p-6 md:w-1/2">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-2">E-Commerce Web Application</h3>
+    <p class="text-sm text-gray-500 mb-3">Django REST API · React · PostgreSQL · Tailwind</p>
+    
+    <!-- Overview -->
+    <p class="text-gray-700 mb-4">
+      A modern e-commerce platform with secure payments, product management, 
+      and a seamless shopping experience powered by Django REST API and React.
+    </p>
+    
+    <!-- Features -->
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+      <li>Built RESTful backend with Django for scalable API services</li>
+      <li>Integrated React frontend with Tailwind UI for a smooth UX</li>
+      <li>User authentication & role-based authorization (admin, customer)</li>
+      <li>Shopping cart & order management with real-time updates</li>
+      <li>Stripe payment integration for secure online checkout</li>
+      <li>Admin dashboard for products, categories, and inventory</li>
+      <li>Optimized queries & caching for fast product browsing</li>
+    </ul>
+    
+    <a href="https://github.com/username/ecommerce-app" target="_blank" 
+       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
+       View on GitHub
+    </a>
+  </div>
+</div>
+<!-- Project -->
+
+<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+  <!-- Project Image -->
+  <div class="md:w-1/2 w-full">
+    <img src="img/chatty.PNG" alt="Django Chat Application" class="w-full h-64 object-cover">
+  </div>
+  
+  <!-- Project Details -->
+  <div class="p-6 md:w-1/2">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Django Real-time Chat Application</h3>
+    <p class="text-sm text-gray-500 mb-3">Django · Tailwind · SQLite · JavaScript (Voice Notes)</p>
+    
+    <!-- Overview -->
+    <p class="text-gray-700 mb-4">
+      A real-time chat system built with Django and Tailwind CSS. 
+      It supports text and voice messaging, friend lists, unread message counts, 
+      and user profile management in a clean and responsive interface.
+    </p>
+    
+    <!-- Features -->
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+      <li>User authentication (sign up, login, logout)</li>
+      <li>Profile pages with image, name, and contact info</li>
+      <li>Friends list with last message preview & unread count</li>
+      <li>Messaging: text + voice notes (record & playback)</li>
+      <li>Django Q objects to fetch conversations both ways</li>
+      <li>Settings: profile, language, help, logout</li>
+      <li>Responsive design with fixed navbar & user info card</li>
+    </ul>
+    
+    <a href="https://github.com/username/django-chat-app" target="_blank" 
+       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
+       View on GitHub
+    </a>
+  </div>
+</div>
+
+
+<!-- Project -->
+   <div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+  <!-- Project Image -->
+  <div class="md:w-1/2 w-full">
+    <img src="img/email.PNG" alt="Email Automation App" class="w-full h-64 object-cover">
+  </div>
+  
+  <!-- Project Details -->
+  <div class="p-6 md:w-1/2">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Email Automation System</h3>
+    <p class="text-sm text-gray-500 mb-3">Django · Celery · Redis · SMTP · Tailwind</p>
+    
+    <!-- Overview -->
+    <p class="text-gray-700 mb-4">
+      A system for scheduling, sending, and tracking bulk email campaigns. 
+      Built with Django and Celery for background tasks, it ensures efficient 
+      and non-blocking email delivery with detailed reporting.
+    </p>
+    
+    <!-- Features -->
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+      <li>Implemented bulk and scheduled email sending with Celery & Redis</li>
+      <li>Integrated SMTP/PHPMailer for reliable email delivery</li>
+      <li>Asynchronous background processing to avoid blocking requests</li>
+      <li>Customizable email templates with dynamic placeholders</li>
+      <li>Delivery status tracking and bounce/error logging</li>
+      <li>Admin dashboard for campaign management and analytics</li>
+      <li>Optimized for scalability — handles thousands of emails without downtime</li>
+    </ul>
+    
+    <a href="https://github.com/username/email-automation" target="_blank" 
+       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
+       View on GitHub
+    </a>
+  </div>
+</div>
+<!-- Project -->
+
+<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+  <!-- Project Image -->
+  <div class="md:w-1/2 w-full">
+    <img src="img/expense.PNG" alt="Hotel Management System" class="w-full h-64 object-cover">
+  </div>
+  
+  <!-- Project Details -->
+  <div class="p-6 md:w-1/2">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Hotel Management & Booking System</h3>
+    <p class="text-sm text-gray-500 mb-3">Django · Tailwind · PostgreSQL · Travel APIs</p>
+    
+    <!-- Overview -->
+    <p class="text-gray-700 mb-4">
+      A booking and hotel management platform where users can search, compare, 
+      and book hotels worldwide. Includes travel recommendations such as 
+      honeymoon spots and vacation deals.
+    </p>
+    
+    <!-- Features -->
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+      <li>User authentication & booking management</li>
+      <li>Hotel listings with pricing and location filters</li>
+      <li>Search by country, city, or region</li>
+      <li>Price comparison across multiple hotels</li>
+      <li>Travel suggestions (honeymoon & vacation)</li>
+      <li>Email notifications for bookings & updates</li>
+      <li>Responsive and mobile-friendly design</li>
+    </ul>
+    
+    <a href="https://github.com/username/hotel-management-app" target="_blank" 
+       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
+       View on GitHub
+    </a>
+  </div>
+</div>
+
+
+</section>
+
+
+<!-- Projects Section  Froent End-->
+<section id="projects" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-center text-red-600 text-3xl font-bold mb-12" data-aos="zoom-in">
+      Front End Projects
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project Card -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up">
+        <img src="img/figma.PNG" alt="Figma Project" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-lg font-semibold mb-3">Animated Website from Figma</h5>
+          <a href="Projects/Figma project/index.html" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
+            View Website →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+        <img src="img/logistics.PNG" alt="Logistics Project" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-lg font-semibold mb-3">Logistic Website</h5>
+          <a href="https://logistics-app-alpha.vercel.app/" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
+            View Website →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+        <img src="img/skilline.PNG" alt="Educational Website" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-lg font-semibold mb-3">Educational Website</h5>
+          <a href="Projects/Skilline project/index.html" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
+            View Website →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="600">
+        <img src="img/amaac.PNG" alt="Toy Website" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-lg font-semibold mb-3">Islamic wbeiste</h5>
+          <a href="https://amacc-phi.vercel.app/" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
+            View Website →
+          </a>
+        </div>
+      </div>
+      
+
+      <!-- Project Card -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="600">
+        <img src="img/toys.PNG" alt="Toy Website" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-lg font-semibold mb-3">Toy Website</h5>
+          <a href="Projects/Toys/index.html" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
+            View Website →
+          </a>
+        </div>
+      </div>
+      
+      
+
+      <!-- Project Card -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="800">
+        <img src="img/restaurant.PNG" alt="Restaurant Website" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-lg font-semibold mb-3">Restaurant Website</h5>
+          <a href="Projects/Restaurant website/index.html" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
+            View Website →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Ends Here -->
+
+<!-- Footer Section -->
+ <!-- Contact / Footer Section -->
+<footer id="contact" class="bg-gray-900 text-white py-16">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <!-- Divider -->
+    <hr class="w-1/2 mx-auto mb-8 border-gray-600">
+
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold text-red-500 mb-4" data-aos="zoom-in">
+      Get In Touch
+    </h2>
+
+    <!-- Description -->
+    <p class="text-lg text-gray-300 mb-6" data-aos="zoom-in" data-aos-delay="200">
+      I’m open to full-time roles, freelance projects, or collaborations.  
+      Feel free to reach out via email or connect with me on LinkedIn & social media.
+    </p>
+
+    <!-- Email -->
+    <p class="mb-6 text-gray-200" data-aos="zoom-in" data-aos-delay="300">
+      📧 lawalhussein775@gmail.com
+    </p>
+
+    <!-- Action Buttons -->
+    <div class="flex justify-center gap-4 mb-10">
+      <a href="mailto:lawalhussein775@gmail.com"  data-aos="zoom-in" data-aos-delay="300"
+         class="px-5 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+        Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" data-aos="zoom-in" data-aos-delay="400"
+         class="px-5 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition">
+        LinkedIn
+      </a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="flex justify-center gap-6">
+      <a href="https://www.instagram.com/husseinlawal775/" target="_blank">
+        <img src="img/instagram.png" alt="Instagram" class="w-8 h-8 hover:scale-110 transition">
+      </a>
+      <a href="https://github.com/Tboiii-123" target="_blank">
+        <img src="img/github.png" alt="GitHub" class="w-8 h-8 hover:scale-110 transition">
+      </a>
+      <a href="#">
+        <img src="img/whatsapp.png" alt="WhatsApp" class="w-8 h-8 hover:scale-110 transition">
+      </a>
+      <a href="https://www.linkedin.com/in/lawal-hussein/" target="_blank">
+        <img src="img/linkedln.png" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition">
+      </a>
+    </div>
+
+    <!-- Footer Note -->
+    <p class="mt-10 text-sm text-gray-500">
+      © 2023 Lawal Hussein. All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+
+<!-- Script for toggle -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+</body>
+</html>

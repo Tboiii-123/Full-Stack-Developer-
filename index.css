@@ -1,0 +1,45 @@
+
+#image{
+    
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 2s infinite ease-in-out; /* Float animation */
+  
+    
+}
+
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Default position */
+    }
+    50% {
+      transform: translateY(-20px); /* Moves up slightly */
+    }
+  }
+/* Ends Here */
+
+
+ #button:hover{  
+    box-shadow: 0 35px 30px rgba(148, 5, 5, 0.4); /* Enhance shadow on hover */
+  
+}
+    
+
+/* Footer */
+
+
+html {
+      scroll-behavior: smooth;
+    }
+    
+
+    
+html, body {
+  overflow-x: hidden;
+}
+
+/* Optional: small tweak to avoid overflow */
+[data-aos] {
+  will-change: transform;
+}
