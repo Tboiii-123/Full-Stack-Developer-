@@ -87,7 +87,7 @@
   </section>
 
 
-  <!-- Skills Section (Tailwind) -->
+<!-- Skills Section (Tailwind + AOS) -->
 <section id="skill" class="py-16 bg-gray-900 text-white">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-4">Skills</h2>
@@ -97,7 +97,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <!-- Python -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="0">
         <div class="flex items-center justify-between mb-1">
           <h4 class="text-lg font-semibold">Python</h4>
           <span class="text-sm text-gray-300">100%</span>
@@ -111,7 +111,7 @@
       </div>
 
       <!-- Django -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
         <div class="flex items-center justify-between mb-1">
           <h4 class="text-lg font-semibold">Django</h4>
           <span class="text-sm text-gray-300">100%</span>
@@ -125,7 +125,7 @@
       </div>
 
       <!-- JavaScript -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
         <div class="flex items-center justify-between mb-1">
           <h4 class="text-lg font-semibold">JavaScript</h4>
           <span class="text-sm text-gray-300">100%</span>
@@ -139,7 +139,7 @@
       </div>
 
       <!-- React -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="300">
         <div class="flex items-center justify-between mb-1">
           <h4 class="text-lg font-semibold">React</h4>
           <span class="text-sm text-gray-300">70%</span>
@@ -153,7 +153,7 @@
       </div>
 
       <!-- Tailwind / Bootstrap -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="400">
         <div class="flex items-center justify-between mb-1">
           <h4 class="text-lg font-semibold">Tailwind / Bootstrap</h4>
           <span class="text-sm text-gray-300">95%</span>
@@ -167,7 +167,7 @@
       </div>
 
       <!-- PostgreSQL -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md">
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="500">
         <div class="flex items-center justify-between mb-1">
           <h4 class="text-lg font-semibold">PostgreSQL</h4>
           <span class="text-sm text-gray-300">95%</span>
@@ -179,6 +179,21 @@
           <div class="h-2 bg-red-500 rounded w-[95%]"></div>
         </div>
       </div>
+
+      <!-- Supabase -->
+      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="600">
+        <div class="flex items-center justify-between mb-1">
+          <h4 class="text-lg font-semibold">Supabase</h4>
+          <span class="text-sm text-gray-300">95%</span>
+        </div>
+        <p class="text-sm text-gray-300 mb-3">
+          Designs scalable databases, handles authentication, and manages real-time data.
+        </p>
+        <div class="w-full h-2 bg-gray-700 rounded">
+          <div class="h-2 bg-red-500 rounded w-[95%]"></div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -261,6 +276,7 @@
     </a>
   </div>
 </div>
+
 <!-- Project -->
 
 <div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
@@ -373,6 +389,41 @@
     </a>
   </div>
 </div>
+<!-- Project -->
+
+<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+  <!-- Project Image -->
+  <div class="md:w-1/2 w-full">
+    <img src="img/PDF -AI.png" alt="Affiliate Platform" class="w-full h-64 object-cover">
+  </div>
+  
+  <!-- Project Details -->
+  <div class="p-6 md:w-1/2">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Affiliate Platform</h3>
+    <p class="text-sm text-gray-500 mb-3">HTML · CSS · JavaScript · Supabase · Paystack</p>
+    
+    <!-- Overview -->
+    <p class="text-gray-700 mb-4">
+      A web-based affiliate platform where users register via referral links, make purchases, and track sales. 
+      The dashboard automatically updates the number of sales made by each affiliate.
+    </p>
+    
+    <!-- Features -->
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+      <li>User registration and authentication with Supabase</li>
+      <li>Affiliate referral tracking</li>
+      <li>Payment processing using Paystack API</li>
+      <li>Real-time sales dashboard</li>
+      <li>Frontend-only solution (no backend server required)</li>
+    </ul>
+    
+    <a href="https://affilate-hub-theta.vercel.app/login.html" target="_blank" 
+       class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-900 text-sm">
+       View Live
+    </a>
+  </div>
+</div>
+
 
 
 </section>
