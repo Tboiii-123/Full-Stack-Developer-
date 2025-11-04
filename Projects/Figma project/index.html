@@ -3,439 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexcent</title>
-       
-<!-- Custom bootstrap link -->
-<link rel="stylesheet" href="index.css">
-<!-- Css bootstrap link -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">    
-<!-- Js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
-    
+    <title>Nexcent - Tailwind Conversion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        /* Custom Tailwind Configuration (optional, but helps define the main green color) */
+        /* This uses Tailwind's JIT mode and the config in the script tag below to define 'primary' */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#217b7b', /* A custom dark cyan/green */
+                        'neutral-silver': '#F5F7FA',
+                        'neutral-dark-gray': '#4D4D4D',
+                        'neutral-gray': '#717171',
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 <body>
 
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="" id="logo" > <img src="img/icon.png" alt=""> Nexcent</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-      
-                      <ul class="navbar-nav">
-                        <li class="nav-item ">
-                          <a class="nav-link active "  href="">Home</a>
-                        </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" href="">Features</a>
-                          
-                      </li>  
-                            <li class="nav-item">
-                              <a class="nav-link active " href="">Community </a>
-                            </li>
-                                        
-                    <li class="nav-item ">
-                      <a class="nav-link active " href="">Blog</a>
-                    </li>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a class="flex items-center space-x-2 text-2xl font-bold text-primary" href="#"> 
+                    <img src="img/icon.png" alt="Nexcent Logo" class="h-8"> Nexcent
+                </a>
 
-                    <li class="nav-item ">
-                      <a class="nav-link active " href="">Pricing</a>
-                    </li>
-                    
-                    <li class="nav-item ">
-                      <button>Register Now &#8594;</button>
-                    </li>
-                    
-              </ul>  
-          </div>
-        </div>
-      </nav>
-<!-- Ends Here -->
-
-
-
-
-<!-- Section 1 -->
-
-        <section class="section1">
-            
-          <div class="first">
-              <h1>Lessons and Insights  <span style="color:darkcyan;">from 8 years</span> </h1>
-              <p>Where to grow your business as a photographer:site for social media?</p>
-              <button>Register</button>
-          </div>
-
-          <div class="first hidden" id="second">
-              <img src="img/Illustration.png" alt="No_image">
-          </div>
-
-          
-        </section>
-        <div style="display: flex; justify-content:center; align-items:center;margin-top:-20px;">
-          <img src="img/Dot.png" alt="No_image">
-
-        </div>
-        <!-- Ends Here -->
-
-
-
-</section>
-
-
-        <!-- Section2 -->
-        <section class="section2">
-          <div>
-              <h1>Our Clients</h1>
-          </div>
-          <div>
-              <p>We have been working with some Fortune 500+ clients</p>
-  
-          </div>
-              <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 my-4">
-    <img src="img/Logo.png" alt="Client Logo" style="max-height:40px;">
-    <img src="img/Logo (1).png" alt="Client Logo" style="max-height:60px;">
-    <img src="img/Logo (2).png" alt="Client Logo" style="max-height:60px;">
-    <img src="img/Logo (3).png" alt="Client Logo" style="max-height:60px;">
-    <img src="img/Logo (4).png" alt="Client Logo" style="max-height:60px;">
-    <img src="img/Logo (5).png" alt="Client Logo" style="max-height:60px;">
-  </div>
-
-            
-          <div>
-            <p >Manage your entire commuinty in a single system </p>
-            
-          </div>
-          <div>
-            <p>who is Nexcent suitable for?</p>
-            
-          </div>
-          </section>
-  
-  
-<!-- Ends Here -->
-
-
-
-
-<!-- section  3   -->
-        
-     <!-- Section 3 -->
-<section class="section3 py-5"  >
-  <div class="container">
-    <div class="row g-4 text-center">
-
-      <div class="col-md-4" >
-        <div class="card border-0 shadow-sm h-100 p-4" style="box-shadow:1px 1px 30px black;background-color: whitesmoke; cursor: pointer;">
-          <img src="img/Icon (6).png" alt="Membership Organizations" class="mx-auto mb-3" style="max-height:60px;">
-          <h5 class="fw-bold">Membership Organizations</h5>
-          <p class="text-muted">
-            Our membership software management provides full automation of membership renewals and payments.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm h-100 p-4" style="    box-shadow:1px 1px 30px black;    background-color: whitesmoke;    cursor: pointer;">
-          <img src="img/Icon (5).png" alt="National Associations" class="mx-auto mb-3" style="max-height:60px;">
-          <h5 class="fw-bold">National Associations</h5>
-          <p class="text-muted">
-            Our membership software management provides full automation of membership renewals and payments.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm h-100 p-4" style="    box-shadow:1px 1px 30px black;    background-color: whitesmoke;    cursor: pointer;">
-          <img src="img/Icon (4).png" alt="Clubs and Groups" class="mx-auto mb-3" style="max-height:60px;">
-          <h5 class="fw-bold">Clubs and Groups</h5>
-          <p class="text-muted">
-            Our membership software management provides full automation of membership renewals and payments.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Ends Here -->
-
-
-
-
-<!-- Section 4 -->
-
-<section class="section4"> 
-
-  <div  id="first">
-      <img src="img/Frame 35.png" alt="No_image">
-      
-
-  </div>
-
-  
-  <div class="inner" id="first">
-    <h1>The Unseen of spending three years at Pixelgrade</h1>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptate soluta blanditiis mollitia maxime officia molestias consequatur totam saepe! Quia magni nobis officia velit architecto! Quibusdam facilis delectus hic rem!</p>
-      <button>Learn more &#8594; </button>
-  </div>
-
-</section>
-<!-- Ends Here -->
-
-
-
-<!-- Section  5-->
-
-<section class="section5">
-  
-  <div class="hid">
-    <h1>Helping a local <span style="color:darkcyan;"> business reinvent itself</span> </h1>
-
-  </div>
-
-
-      
-        <div class="inner hid">
-          
-
-          <div class="inner2 ">
-
-            
-                  
-                <div>
-                  <img src="img/Icon (2).png" alt="No_image">
-            
-                  <p>  2,245,341<br> <span style="font-weight: normal;">Members</span> </p>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-neutral-dark-gray hover:text-primary focus:outline-none focus:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
                 
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-neutral-gray hover:text-primary font-medium">Home</a>
+                    <a href="#" class="text-neutral-gray hover:text-primary font-medium">Features</a>
+                    <a href="#" class="text-neutral-gray hover:text-primary font-medium">Community</a>
+                    <a href="#" class="text-neutral-gray hover:text-primary font-medium">Blog</a>
+                    <a href="#" class="text-neutral-gray hover:text-primary font-medium">Pricing</a>
+                    <button class="bg-primary text-white py-2 px-4 rounded hover:opacity-90 transition duration-300">
+                        Register Now &rarr;
+                    </button>
                 </div>
-                  
-
-                <div id="inner3">
-                  <img src="img/Icon (4).png" alt="No_image">
-                 
-                  <p>46,328 <br> <span style="font-weight: normal;">  Clubs</span> </p>
-                   
-                </div>
-
-                
-                      
-        
-                      
-                  
-                </div>
-                            
-
-                <div class="inner2">
-
-                          <div>
-                              
-                        <img src="img/Icon (1).png" alt="No_image"> 
-        
-                        <p>  828,862 <br>  <span style="font-weight: normal;">Event Bookings </span> </p>
-                    
-                          </div>
-        
-                  
-
-                        <div id="inner3">
-                          
-
-                          
-                              <img src="img/wallet.png" alt="No_image">
-                             
-                              <p> 1,926,436 <br>    <span style="font-weight: normal;">payments</span>  </p>
-
-                        </div>
-
-               </div>
-                  
-          
+            </div>
         </div>
         
-      
-  </section>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-neutral-dark-gray hover:bg-neutral-silver hover:text-primary">Home</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-neutral-dark-gray hover:bg-neutral-silver hover:text-primary">Features</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-neutral-dark-gray hover:bg-neutral-silver hover:text-primary">Community</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-neutral-dark-gray hover:bg-neutral-silver hover:text-primary">Blog</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-neutral-dark-gray hover:bg-neutral-silver hover:text-primary">Pricing</a>
+                <button class="w-full text-left bg-primary text-white py-2 px-3 mt-2 rounded-md hover:opacity-90 transition duration-300">
+                    Register Now &rarr;
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="py-16 bg-neutral-silver">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl lg:text-6xl font-extrabold text-neutral-dark-gray leading-tight mb-4">
+                        Lessons and Insights 
+                        <span class="text-primary block sm:inline">from 8 years</span>
+                    </h1>
+                    <p class="text-lg text-neutral-gray mb-8">
+                        Where to grow your business as a photographer: site for social media?
+                    </p>
+                    <button class="bg-primary text-white py-3 px-8 rounded hover:opacity-90 font-medium transition duration-300 shadow-lg">
+                        Register
+                    </button>
+                </div>
 
-  <!-- Ends Here -->
-
-<!-- Section6 -->
-
-
-<section class="section6 hid">
-
-      <div >
-          <img src="img/pana.png" alt="No_image">
-      </div>
-
-      <div class="inner">
-          <h1>How do we design your site footer like we did</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis natus earum blanditiis, facilis maxime voluptate doloremque aut iste quod magnam, ea adipisci necessitatibus quisquam perferendis molestiae aliquid numquam eius.</p>
-          <button>Learn more &nbsp;</button>
-      </div>
-</section>
-
-
-<!-- Ends here -->
-
-
-
-
-
-
-<!-- Section7 -->
-
-<section class="section7">
-
-      <div class="hid">
-          <img src="img/image 9.png" alt="No_image">
-      </div>
-
-      <div class="inner hid">
-          
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ipsum reiciendis exercitationem quod laudantium esse, et sit at quasi voluptatibus neque pariatur eius molestiae repudiandae culpa ipsa, ab accusantium sint quas quaerat ullam libero necessitatibus tempore? Porro temporibus tempore delectus.</p>
-          <p style="color: darkcyan;font-weight:bolder;">Tim Smith</p>
-          <p>British Dragon Boat Racing Asscociation</p>
-          
-    <span><img src="img/Logo.png" alt="No_image"><img src="img/Logo (1).png" alt="No_image"><img src="img/Logo (2).png" alt="No_image"><img src="img/Logo (3).png" alt="No_image"><img src="img/Logo (4).png" alt="No_image"><img src="img/Logo (5).png" alt="No_image">    <p style="color: darkcyan;font-weight:bolder;font-size: 15px;">Meet all Customers &#8594;</p></span>
-
-      </div>
-
-</section>
-
-
-<!-- Ends Here -->
-
-
-
-
-<!-- Section8 -->
-  <section class="section8">
-   
-      <h1>Caring in the new marketing</h1>
-      
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem non laudantium iure rerum magni velit veritatis, excepturi voluptatem quaerat error nesciunt corrupti est consequuntur porro a. Recusandae eaque libero odio.</p>
-
-        <div class="images">
-
-          <div class="inner hid">
-
-            <img src="img/image 18.png" alt="No_image">
-
-            <div class="overlay">
-                <p>Creating Streamlined Safeguarding Process with OneRen</p>
-                <p style="color: darkcyan;">Read More &#8594;</p>
-
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="img/Illustration.png" alt="Illustration" class="w-full max-w-sm mx-auto">
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-4">
+            <img src="img/Dot.png" alt="Indicator Dots" class="h-2">
+        </div>
+    </section>
+    <section class="py-12 text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-neutral-dark-gray mb-2">Our Clients</h2>
+            <p class="text-neutral-gray mb-10">We have been working with some Fortune 500+ clients</p>
+            
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 my-8">
+                <img src="img/Logo.png" alt="Client Logo" class="h-8 md:h-10">
+                <img src="img/Logo (1).png" alt="Client Logo" class="h-10 md:h-12">
+                <img src="img/Logo (2).png" alt="Client Logo" class="h-10 md:h-12">
+                <img src="img/Logo (3).png" alt="Client Logo" class="h-10 md:h-12">
+                <img src="img/Logo (4).png" alt="Client Logo" class="h-10 md:h-12">
+                <img src="img/Logo (5).png" alt="Client Logo" class="h-10 md:h-12">
             </div>
 
-          </div>
-          
-          <div class="inner hid">
-            <img src="img/image 19.png" alt="No_image">
-
-            <div class="overlay">
-              <p>What are your safeguarding responsibilities and how can you manage them</p>
-              <p style="color: darkcyan;">Read More &#8594;</p>
-                
-          </div>
-
-            
-          </div>
-          
-          <div class="inner hid">
-            <img src="img/image 20.png" alt="No_image">
-
-            <div class="overlay">
-
-              <p>Revamping the Membership Model with Triathlon Australia</p>
-              <p style="color: darkcyan;">Read More &#8594;</p>
-                
-          </div>
-
-            
-          </div>
-
-          
+            <div class="mt-16">
+                <h2 class="text-3xl font-bold text-neutral-dark-gray mb-2">
+                    Manage your entire community in a single system 
+                </h2>
+                <p class="text-neutral-gray">Who is Nexcent suitable for?</p>
+            </div>
         </div>
+    </section>
+    <section class="py-16 bg-neutral-silver">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-  </section>
+                <div class="p-8 text-center bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 cursor-pointer">
+                    <img src="img/Icon (6).png" alt="Membership Organizations" class="mx-auto mb-4 h-12">
+                    <h5 class="text-xl font-bold text-neutral-dark-gray mb-3">Membership Organizations</h5>
+                    <p class="text-neutral-gray">
+                        Our membership software management provides full automation of membership renewals and payments.
+                    </p>
+                </div>
 
-<!-- Ends Here -->
+                <div class="p-8 text-center bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 cursor-pointer">
+                    <img src="img/Icon (5).png" alt="National Associations" class="mx-auto mb-4 h-12">
+                    <h5 class="text-xl font-bold text-neutral-dark-gray mb-3">National Associations</h5>
+                    <p class="text-neutral-gray">
+                        Our membership software management provides full automation of membership renewals and payments.
+                    </p>
+                </div>
 
+                <div class="p-8 text-center bg-white rounded-lg shadow-xl hover:shadow-2xl transition duration-300 cursor-pointer">
+                    <img src="img/Icon (4).png" alt="Clubs and Groups" class="mx-auto mb-4 h-12">
+                    <h5 class="text-xl font-bold text-neutral-dark-gray mb-3">Clubs and Groups</h5>
+                    <p class="text-neutral-gray">
+                        Our membership software management provides full automation of membership renewals and payments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2">
+                    <img src="img/Frame 35.png" alt="Feature Illustration" class="w-full max-w-lg mx-auto">
+                </div>
 
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-neutral-dark-gray mb-4">
+                        The Unseen of spending three years at Pixelgrade
+                    </h2>
+                    <p class="text-neutral-gray mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptate soluta blanditiis mollitia maxime officia molestias consequatur totam saepe! Quia magni nobis officia velit architecto! Quibusdam facilis delectus hic rem!
+                    </p>
+                    <button class="bg-primary text-white py-3 px-8 rounded hover:opacity-90 font-medium transition duration-300">
+                        Learn more &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-neutral-silver">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div class="lg:w-1/3 text-center lg:text-left">
+                    <h2 class="text-3xl font-bold text-neutral-dark-gray mb-8">
+                        Helping a local 
+                        <span class="text-primary block sm:inline">business reinvent itself</span>
+                    </h2>
+                </div>
 
+                <div class="lg:w-2/3 grid grid-cols-2 gap-x-12 gap-y-8">
+                    <div class="flex items-center space-x-4">
+                        <img src="img/Icon (2).png" alt="Members" class="h-10 w-10">
+                        <div>
+                            <p class="text-2xl font-bold text-neutral-dark-gray">2,245,341</p>
+                            <span class="text-neutral-gray">Members</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="img/Icon (4).png" alt="Clubs" class="h-10 w-10">
+                        <div>
+                            <p class="text-2xl font-bold text-neutral-dark-gray">46,328</p>
+                            <span class="text-neutral-gray">Clubs</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="img/Icon (1).png" alt="Event Bookings" class="h-10 w-10">
+                        <div>
+                            <p class="text-2xl font-bold text-neutral-dark-gray">828,862</p>
+                            <span class="text-neutral-gray">Event Bookings</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="img/wallet.png" alt="Payments" class="h-10 w-10">
+                        <div>
+                            <p class="text-2xl font-bold text-neutral-dark-gray">1,926,436</p>
+                            <span class="text-neutral-gray">Payments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2">
+                    <img src="img/pana.png" alt="Site Footer Illustration" class="w-full max-w-lg mx-auto">
+                </div>
 
-<!-- Section9 -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-neutral-dark-gray mb-4">
+                        How do we design your site footer like we did
+                    </h2>
+                    <p class="text-neutral-gray mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis natus earum blanditiis, facilis maxime voluptate doloremque aut iste quod magnam, ea adipisci necessitatibus quisquam perferendis molestiae aliquid numquam eius.
+                    </p>
+                    <button class="bg-primary text-white py-3 px-8 rounded hover:opacity-90 font-medium transition duration-300">
+                        Learn more &nbsp;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-neutral-silver">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div class="lg:w-1/3">
+                    <img src="img/image 9.png" alt="Tim Smith" class="w-full max-w-sm mx-auto rounded-lg">
+                </div>
 
-<section class="section9">
-    <h1>Pellesntesque Suscipit fringilla libero eu</h1>
-    <button>Demo &#8594;</button>
-</section>
-<!-- Ends Here -->
+                <div class="lg:w-2/3 text-center lg:text-left">
+                    <p class="text-neutral-gray italic mb-6">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ipsum reiciendis exercitationem quod laudantium esse, et sit at quasi voluptatibus neque pariatur eius molestiae repudiandae culpa ipsa, ab accusantium sint quas quaerat ullam libero necessitatibus tempore? Porro temporibus tempore delectus.
+                    </p>
+                    <p class="text-primary font-bold text-lg mb-1">Tim Smith</p>
+                    <p class="text-neutral-gray mb-8">British Dragon Boat Racing Asscociation</p>
+                    
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6">
+                        <img src="img/Logo.png" alt="Client Logo" class="h-8">
+                        <img src="img/Logo (1).png" alt="Client Logo" class="h-10">
+                        <img src="img/Logo (2).png" alt="Client Logo" class="h-10">
+                        <img src="img/Logo (3).png" alt="Client Logo" class="h-10">
+                        <img src="img/Logo (4).png" alt="Client Logo" class="h-10">
+                        <img src="img/Logo (5).png" alt="Client Logo" class="h-10">
+                        
+                        <a href="#" class="text-primary font-bold text-sm hover:underline ml-4">
+                            Meet all Customers &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-neutral-dark-gray mb-3">Caring in the new marketing</h2>
+            <p class="text-neutral-gray max-w-xl mx-auto mb-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem non laudantium iure rerum magni velit veritatis, excepturi voluptatem quaerat error nesciunt corrupti est consequuntur porro a.
+            </p>
 
-<!-- Footer -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative group">
+                    <img src="img/image 18.png" alt="Blog Image 1" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-11/12 bg-neutral-silver p-6 rounded-lg shadow-xl transition duration-300 group-hover:scale-105">
+                        <p class="font-semibold text-neutral-dark-gray mb-3">Creating Streamlined Safeguarding Process with OneRen</p>
+                        <a href="#" class="text-primary font-bold text-sm hover:underline">Read More &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <img src="img/image 19.png" alt="Blog Image 2" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-11/12 bg-neutral-silver p-6 rounded-lg shadow-xl transition duration-300 group-hover:scale-105">
+                        <p class="font-semibold text-neutral-dark-gray mb-3">What are your safeguarding responsibilities and how can you manage them</p>
+                        <a href="#" class="text-primary font-bold text-sm hover:underline">Read More &rarr;</a>
+                    </div>
+                </div>
 
-<footer >
+                <div class="relative group">
+                    <img src="img/image 20.png" alt="Blog Image 3" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-11/12 bg-neutral-silver p-6 rounded-lg shadow-xl transition duration-300 group-hover:scale-105">
+                        <p class="font-semibold text-neutral-dark-gray mb-3">Revamping the Membership Model with Triathlon Australia</p>
+                        <a href="#" class="text-primary font-bold text-sm hover:underline">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-20"></div> 
+        </div>
+    </section>
+    <section class="py-16 bg-neutral-silver text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-neutral-dark-gray mb-8">
+                Pellesntesque Suscipit fringilla libero eu
+            </h1>
+            <button class="bg-primary text-white py-3 px-8 rounded hover:opacity-90 font-medium transition duration-300 shadow-lg">
+                Demo &rarr;
+            </button>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <h1 class="flex items-center space-x-2 text-2xl font-bold text-white">
+                        <img src="img/icon.png" alt="Nexcent Logo" class="h-8"> Nexcent
+                    </h1>
+                    <p class="text-gray-400 text-sm">Copyright @2024 Landift UI Kit.</p>
+                    <p class="text-gray-400 text-sm">All right reserved</p>
+                    <div class="flex space-x-4 pt-2">
+                        <img src="img/insta.png" alt="Instagram" class="h-6">
+                        <img src="img/Social Icons.png" alt="Social" class="h-6">
+                        <img src="img/twitter.png" alt="Twitter" class="h-6">
+                        <img src="img/youtube.png" alt="Youtube" class="h-6">
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-primary">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary">Blog</a></li>
+                        <li><a href="#" class="hover:text-primary">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary">Pricing</a></li>
+                        <li><a href="#" class="hover:text-primary">Testimonials</a></li>
+                    </ul>
+                </div>
 
-    <div class="logo hid">
-      <h1><img src="img/icon.png" alt=""> Nexcent</h1>
-      <p>Copyright @2024 Landift UI Kit.</p>
-      <p>All right reserved</p>
-      <p><img src="img/insta.png" alt="No_image"> <img src="img/Social Icons.png" alt="No_image"> <img src="img/twitter.png" alt="No_image"> <img src="img/youtube.png" alt="No_image"> </p>
-    </div>
-   
-    <div class="outer hid">
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-primary">Help center</a></li>
+                        <li><a href="#" class="hover:text-primary">Terms and services</a></li>
+                        <li><a href="#" class="hover:text-primary">Legal</a></li>
+                        <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary">Status</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-semibold mb-6">Stay up to date</h4>
+                    <div class="relative">
+                        <input type="email" placeholder="Your email address" class="w-full bg-gray-700 text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                </div>
+            </div>
             
-      <div class="inner">
-
-        <h4>Company</h4>
-        <ul>
-          <li>About Us</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
-          <li>Pricing</li>
-          <li>Testimonials</li>
-          
-        </ul>
-
-      </div>
-
-      <div class="secondouter">
-              
-          <div class="inner">
-            
-            <h4>Support</h4>
-            <ul>
-              <li>Help  center</li>
-              <li>Terms and services</li>
-              
-              <li>Legal</li>
-              
-              <li>Privacy Policy</li>
-              <li>Status</li>
-              
-            </ul>
-            
-          </div>
-
-          <div class="inner" id="inner">
-
-            <h4>Stay up tp date</h4>
-            <input type="text"  placeholder="Your email address">
-          </div>
-
-      </div>
-      
-    </div>
-    
-</footer>
-
-<!-- Ends Here -->
-<script src="index.js"></script>
-
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-500 text-sm">© 2024 Nexcent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const button = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        if (button && menu) {
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
 </body>
 </html>

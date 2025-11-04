@@ -3,698 +3,589 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lawal Hussein | Portfolio</title>
+  <title>Hussein Lawal | Full-Stack Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-dark': '#0A0A0A', // Deepest background
+            'secondary-dark': '#1F2937', // Card/Section background
+            'accent-cyan': '#00ADB5', // Vibrant main accent
+            'text-light': '#F3F4F6',
+            'text-muted': '#9CA3AF',
+          },
+          keyframes: {
+            'float': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-5px)' },
+            }
+          },
+          animation: {
+            'float': 'float 3s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="index.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-  
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW2YR0246K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<body class="bg-primary-dark text-text-light font-sans" style="font-family: 'Fira Code', monospace;">
 
-  gtag('config', 'G-WW2YR0246K');
-</script>
-<body class="bg-gray-50 text-gray-800">
-<!-- Navbar -->
-<header class="bg-white shadow-md fixed w-full top-0 z-50">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-    <!-- Logo / Name -->
-    <h1 class="text-2xl font-bold text-red-600">Hussein Lawal</h1>
+<header class="bg-primary-dark/95 backdrop-blur-sm shadow-xl fixed w-full top-0 z-50 transition-colors duration-300 border-b border-gray-800">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href="#home" class="text-2xl font-bold text-accent-cyan tracking-wider hover:text-cyan-300 transition duration-300">
+      &lt;Hussein Lawal /&gt;
+    </a>
 
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6">
-      <a href="#home" class="hover:text-red-600">Home</a>
-      <a href="#about" class="hover:text-red-600">About</a>
-      <a href="#projects" class="hover:text-red-600">Projects</a>
-      <a href="#contact" class="hover:text-red-600">Contact</a>
+    <nav class="hidden md:flex space-x-8 text-lg">
+      <a href="#home" class="hover:text-accent-cyan transition duration-300">Home</a>
+      <a href="#about" class="hover:text-accent-cyan transition duration-300">About</a>
+      <a href="#skills" class="hover:text-accent-cyan transition duration-300">Skills</a>
+      <a href="#projects" class="hover:text-accent-cyan transition duration-300">Projects</a>
+      <a href="#contact" class="hover:text-accent-cyan transition duration-300">Contact</a>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden focus:outline-none">
-      <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16" />
+    <button id="menu-btn" class="md:hidden focus:outline-none text-text-light hover:text-accent-cyan transition duration-300">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
   </div>
 
-  <!-- Mobile Nav (hidden by default) -->
-  <nav id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-4 bg-white border-t shadow-md md:hidden">
-    <a href="#home" class="hover:text-red-600">Home</a>
-    <a href="#about" class="hover:text-red-600">About</a>
-    <a href="#projects" class="hover:text-red-600">Projects</a>
-    <a href="#contact" class="hover:text-red-600">Contact</a>
+  <nav id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-4 bg-primary-dark border-t border-gray-800 md:hidden text-lg">
+    <a href="#home" class="hover:text-accent-cyan block py-2">Home</a>
+    <a href="#about" class="hover:text-accent-cyan block py-2">About</a>
+    <a href="#skills" class="hover:text-accent-cyan block py-2">Skills</a>
+    <a href="#projects" class="hover:text-accent-cyan block py-2">Projects</a>
+    <a href="#contact" class="hover:text-accent-cyan block py-2">Contact</a>
   </nav>
 </header>
 
+<section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 bg-primary-dark pt-28 pb-10">
+  <div class="flex-1 text-center md:text-left order-2 md:order-1" data-aos="fade-down">
+    <p class="text-xl text-accent-cyan font-medium mb-3">Hi, my name is</p>
+    <h2 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-text-light mb-4 leading-tight" data-aos="fade-right" data-aos-delay="100">
+      Hussein Lawal.
+    </h2>
 
+    <div class="bg-secondary-dark p-4 rounded-lg shadow-2xl mb-6 inline-block" data-aos="zoom-in" data-aos-delay="300">
+        <code class="text-xl sm:text-2xl text-green-400 block whitespace-nowrap overflow-hidden pr-2 border-r-4 border-accent-cyan animate-typing">
+            Full-Stack Developer | Python/React
+        </code>
+    </div>
+    
+    <p class="text-lg md:text-xl text-text-muted max-w-3xl mx-auto md:mx-0 mb-8" data-aos="fade-right" data-aos-delay="500">
+      I build scalable web applications with clean, responsive frontends and robust, secure backends, specializing in **Django, Python, and modern JavaScript/React** ecosystems.
+    </p>
 
+    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4" data-aos="fade-up" data-aos-delay="700">
+        <a href="#projects" 
+           class="inline-block px-8 py-3 bg-accent-cyan text-primary-dark font-bold rounded-full text-lg hover:bg-cyan-500 transition shadow-lg shadow-cyan-500/30 transform hover:scale-105 duration-300">
+           View My Work <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+        <a href="img/resume.pdf" download 
+           class="inline-block px-8 py-3 border-2 border-accent-cyan text-accent-cyan font-bold rounded-full text-lg hover:bg-cyan-900/50 transition transform hover:scale-105 duration-300">
+           Download Resume
+        </a>
+    </div>
+  </div>
 
-<!-- Hero Section -->
-<section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 bg-gray-100 pt-28">
-  <!-- Left Side (Image) -->
-  <div class="flex-1 flex justify-center mb-6 md:mb-0" data-aos="fade-right">
+  <div class="flex-1 flex justify-center order-1 md:order-2 mt-10 md:mt-0" data-aos="fade-left">
     <img src="img/hussein1.jpg" alt="Lawal Hussein"  
-         class="w-52 h-52 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full object-cover shadow-lg" id="image">
-  </div>
-
-  <!-- Right Side (Text) -->
-  <div class="flex-1 text-center md:text-left" data-aos="fade-left">
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-      Hi, I’m Hussein Lawal 👋
-    </h2>
-    <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto md:mx-0 mb-6">
-      A Full-Stack Developer skilled in Django, Python, React, HTML, CSS, and Tailwind CSS.  
-      I build scalable web applications with clean frontend and robust backend.
-    </p>
-
-    <a href="img/resume.pdf" download 
-   data-aos="zoom-in" data-aos-delay="200"
-   class="inline-block px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition" 
-   id="button">
-   Download Resume
-</a>
-
-
+         class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-2xl border-4 border-cyan-400/50 hover:shadow-cyan-400 transition duration-500 animate-float" id="image">
   </div>
 </section>
 
-
-
-
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-red-600 mb-6" data-aos="zoom-in" >About Me</h2>
-      <p class="text-lg text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-        I’m a passionate Full-Stack Developer with experience in building both frontend and backend applications. 
-        On the frontend, I craft responsive, user-friendly interfaces with HTML, CSS, JavaScript, React, and TailwindCSS. 
-        On the backend, I specialize in Django, Flask, and PostgreSQL to deliver scalable and secure web solutions. 
-        I also integrate APIs, third-party services, and implement session-based authentication.
-      </p>
-    </div>
-  </section>
-
-
-<!-- Skills Section (Tailwind + AOS) -->
-<section id="skill" class="py-16 bg-gray-900 text-white">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-4">Skills</h2>
-    <p class="text-center text-gray-300 mb-10">
-      I build responsive, scalable web applications using Django, JavaScript, and modern frontend tools.
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Python -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="0">
-        <div class="flex items-center justify-between mb-1">
-          <h4 class="text-lg font-semibold">Python</h4>
-          <span class="text-sm text-gray-300">100%</span>
-        </div>
-        <p class="text-sm text-gray-300 mb-3">
-          Efficient coding with strong problem-solving and algorithm skills.
+<section id="about" class="py-20 bg-secondary-dark border-y border-gray-800">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-accent-cyan mb-10 border-b-2 border-cyan-400/50 inline-block pb-1" data-aos="zoom-in">About Me</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-left">
+      <div class="md:col-span-2" data-aos="fade-right" data-aos-delay="200">
+        <p class="text-lg text-text-light leading-relaxed mb-4">
+          I'm a passionate **Full-Stack Developer** focused on creating efficient, maintainable, and highly available web solutions. My foundation is built on the Python ecosystem, with a deep specialization in **Django, PostgreSQL, and RESTful API design**.
         </p>
-        <div class="w-full h-2 bg-gray-700 rounded">
-          <div class="h-2 bg-red-500 rounded w-[100%]"></div>
-        </div>
-      </div>
-
-      <!-- Django -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-        <div class="flex items-center justify-between mb-1">
-          <h4 class="text-lg font-semibold">Django</h4>
-          <span class="text-sm text-gray-300">100%</span>
-        </div>
-        <p class="text-sm text-gray-300 mb-3">
-          Builds secure, database-driven web apps with RESTful APIs.
+        <p class="text-lg text-text-light leading-relaxed mb-4">
+          On the frontend, I deliver responsive and intuitive user experiences using **React, modern JavaScript (including TypeScript), and Tailwind CSS**. I thrive on bridging the gap between design and functionality, ensuring seamless data flow from the database to the user interface.
         </p>
-        <div class="w-full h-2 bg-gray-700 rounded">
-          <div class="h-2 bg-red-500 rounded w-[100%]"></div>
-        </div>
-      </div>
-
-      <!-- JavaScript -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
-        <div class="flex items-center justify-between mb-1">
-          <h4 class="text-lg font-semibold">JavaScript</h4>
-          <span class="text-sm text-gray-300">100%</span>
-        </div>
-        <p class="text-sm text-gray-300 mb-3">
-          Creates dynamic, interactive user interfaces with DOM control.
+        <p class="text-lg text-text-light leading-relaxed">
+          My experience spans **E-commerce, Logistics, and Multi-Tenant API platforms**, where I handle everything from database schema design and secure authentication to deployment and performance optimization.
         </p>
-        <div class="w-full h-2 bg-gray-700 rounded">
-          <div class="h-2 bg-red-500 rounded w-[100%]"></div>
-        </div>
       </div>
-
-      <!-- React -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="300">
-        <div class="flex items-center justify-between mb-1">
-          <h4 class="text-lg font-semibold">React</h4>
-          <span class="text-sm text-gray-300">70%</span>
-        </div>
-        <p class="text-sm text-gray-300 mb-3">
-          Develops component-based UIs with smooth state management.
-        </p>
-        <div class="w-full h-2 bg-gray-700 rounded">
-          <div class="h-2 bg-red-500 rounded w-[70%]"></div>
-        </div>
+      <div class="md:col-span-1 p-6 bg-primary-dark rounded-xl shadow-inner border border-gray-700" data-aos="fade-left" data-aos-delay="400">
+        <h3 class="text-xl font-semibold mb-4 text-accent-cyan">Quick Stats</h3>
+        <ul class="space-y-3">
+          <li class="flex justify-between items-center text-lg text-text-light">
+            <span class="text-text-muted"><i class="fas fa-code mr-2"></i> Years Coding:</span>
+            <span class="font-bold text-cyan-400">3+</span>
+          </li>
+          <li class="flex justify-between items-center text-lg text-text-light">
+            <span class="text-text-muted"><i class="fas fa-project-diagram mr-2"></i> Projects Completed:</span>
+            <span class="font-bold text-cyan-400">10+</span>
+          </li>
+          <li class="flex justify-between items-center text-lg text-text-light">
+            <span class="text-text-muted"><i class="fas fa-server mr-2"></i> Backend Focus:</span>
+            <span class="font-bold text-cyan-400">Python (Django)</span>
+          </li>
+        </ul>
       </div>
-      <!-- Express.js -->
-<div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="400">
-  <div class="flex items-center justify-between mb-1">
-    <h4 class="text-lg font-semibold">Express.js</h4>
-    <span class="text-sm text-gray-300">70%</span>
-  </div>
-  <p class="text-sm text-gray-300 mb-3">
-    Builds scalable backend APIs with routing, middleware, and RESTful endpoints.
-  </p>
-  <div class="w-full h-2 bg-gray-700 rounded">
-    <div class="h-2 bg-green-500 rounded w-[80%]"></div>
-  </div>
-</div>
-
-<!-- TypeScript -->
-<div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="500">
-  <div class="flex items-center justify-between mb-1">
-    <h4 class="text-lg font-semibold">TypeScript</h4>
-    <span class="text-sm text-gray-300">70%</span>
-  </div>
-  <p class="text-sm text-gray-300 mb-3">
-    Enhances JavaScript projects with type safety, interfaces, and better maintainability.
-  </p>
-  <div class="w-full h-2 bg-gray-700 rounded">
-    <div class="h-2 bg-blue-500 rounded w-[75%]"></div>
-  </div>
-</div>
-
-
-      <!-- Tailwind / Bootstrap -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="400">
-        <div class="flex items-center justify-between mb-1">
-          <h4 class="text-lg font-semibold">Tailwind / Bootstrap</h4>
-          <span class="text-sm text-gray-300">95%</span>
-        </div>
-        <p class="text-sm text-gray-300 mb-3">
-          Designs responsive layouts with modern UI components.
-        </p>
-        <div class="w-full h-2 bg-gray-700 rounded">
-          <div class="h-2 bg-red-500 rounded w-[95%]"></div>
-        </div>
-      </div>
-
-      <!-- PostgreSQL -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="500">
-        <div class="flex items-center justify-between mb-1">
-          <h4 class="text-lg font-semibold">PostgreSQL</h4>
-          <span class="text-sm text-gray-300">95%</span>
-        </div>
-        <p class="text-sm text-gray-300 mb-3">
-          Designs scalable databases with optimized queries.
-        </p>
-        <div class="w-full h-2 bg-gray-700 rounded">
-          <div class="h-2 bg-red-500 rounded w-[95%]"></div>
-        </div>
-      </div>
-
-      <!-- Supabase -->
-      <div class="p-6 bg-gray-800 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="600">
-        <div class="flex items-center justify-between mb-1">
-          <h4 class="text-lg font-semibold">Supabase</h4>
-          <span class="text-sm text-gray-300">95%</span>
-        </div>
-        <p class="text-sm text-gray-300 mb-3">
-          Designs scalable databases, handles authentication, and manages real-time data.
-        </p>
-        <div class="w-full h-2 bg-gray-700 rounded">
-          <div class="h-2 bg-red-500 rounded w-[95%]"></div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
 
-  <!-- Projects Section -->
-<section id="projects" class="py-16 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Back End Project</h2>
+<section id="skills" class="py-20 bg-primary-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-accent-cyan mb-12 border-b-2 border-cyan-400/50 inline-block pb-1 mx-auto block w-fit" data-aos="zoom-in">Core Technologies</h2>
 
-    <div class="space-y-12">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="0">
+        <i class="fab fa-python text-4xl text-yellow-400 mb-3 block mx-auto"></i>
+        <h4 class="text-lg font-semibold text-center">Python</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[100%]"></div>
+        </div>
+      </div>
+
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-leaf text-4xl text-green-500 mb-3 block mx-auto"></i> 
+        <h4 class="text-lg font-semibold text-center">Django</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[100%]"></div>
+        </div>
+      </div>
+
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="200">
+        <i class="fab fa-js-square text-4xl text-yellow-500 mb-3 block mx-auto"></i>
+        <h4 class="text-lg font-semibold text-center">JavaScript</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[100%]"></div>
+        </div>
+      </div>
+
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="300">
+        <i class="fab fa-react text-4xl text-cyan-500 mb-3 block mx-auto"></i>
+        <h4 class="text-lg font-semibold text-center">React</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[70%]"></div>
+        </div>
+      </div>
       
-<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-  <!-- Project Image -->
-  <div class="md:w-1/2 w-full">
-    <img src="img/logistics.PNG" alt="Logistics App" class="w-full h-64 object-cover">
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-code text-4xl text-blue-500 mb-3 block mx-auto"></i> 
+        <h4 class="text-lg font-semibold text-center">TypeScript</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[75%]"></div>
+        </div>
+      </div>
+      
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="500">
+        <i class="fas fa-network-wired text-4xl text-gray-400 mb-3 block mx-auto"></i>
+        <h4 class="text-lg font-semibold text-center">Express.js</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[80%]"></div>
+        </div>
+      </div>
+      
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="600">
+        <i class="fas fa-database text-4xl text-blue-700 mb-3 block mx-auto"></i>
+        <h4 class="text-lg font-semibold text-center">PostgreSQL</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[95%]"></div>
+        </div>
+      </div>
+
+      <div class="skill-card p-6 bg-secondary-dark rounded-xl shadow-xl border border-gray-700 hover:border-accent-cyan transition duration-300 transform hover:scale-[1.05]" data-aos="fade-up" data-aos-delay="700">
+        <i class="fas fa-fill-drip text-4xl text-cyan-400 mb-3 block mx-auto"></i>
+        <h4 class="text-lg font-semibold text-center">Tailwind CSS</h4>
+        <div class="w-full h-2 bg-gray-700 rounded-full mt-2">
+          <div class="h-2 bg-accent-cyan rounded-full w-[95%]"></div>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <!-- Project Details -->
-  <div class="p-6 md:w-1/2">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Logistics & Delivery System</h3>
-    <p class="text-sm text-gray-500 mb-3">Django · PostgreSQL · Chart.js · Tailwind</p>
-    
-    <!-- Overview -->
-    <p class="text-gray-700 mb-4">
-      A logistics and delivery tracking platform built with Django, featuring a 
-      real-time KPI dashboard, secure authentication, and seamless shipment management.
-    </p>
-    
-    <!-- Features -->
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-      <li>Session-based authentication for secure user & admin access</li>
-      <li>Interactive KPI dashboard powered by Chart.js</li>
-      <li>Advanced reporting & filtering for shipment analysis</li>
-      <li>Real-time delivery status tracking for transparency</li>
-      <li>Email notifications via async background tasks</li>
-      <li>35% faster performance with optimized queries</li>
-      <li>25% improved on-time delivery through live insights</li>
-    </ul>
-    
-    <a href="https://github.com/Tboiii-123/Logistics-Project" target="_blank" 
-       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
-       View on GitHub
-    </a>
-  </div>
-</div>
-
-<!-- Project -->
-
-<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-  <!-- Project Image -->
-  <div class="md:w-1/2 w-full">
-    <img src="img/swagger.PNG" alt="Multi-Tenant FastAPI Application" class="w-full h-64 object-cover">
-  </div>
-  
-  <!-- Project Details -->
-  <div class="p-6 md:w-1/2">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Multi-Tenant FastAPI Application</h3>
-    <p class="text-sm text-gray-500 mb-3">FastAPI · SQLAlchemy · PostgreSQL · JWT Authentication · Pydantic</p>
-    
-    <!-- Overview -->
-    <p class="text-gray-700 mb-4">
-      A scalable multi-tenant API platform where multiple organizations (tenants) 
-      can register and manage their users, resources, and data independently. 
-      Designed to securely handle tenant-specific authentication and authorization.
-    </p>
-    
-    <!-- Features -->
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-      <li>Tenant-based user authentication & role management</li>
-      <li>CRUD operations for tenant-specific resources</li>
-      <li>JWT-based secure authentication and authorization</li>
-      <li>Database isolation per tenant using PostgreSQL schemas</li>
-      <li>Automatic tenant identification via request headers</li>
-      <li>Async FastAPI endpoints for high-performance requests</li>
-      <li>Swagger UI for API documentation and testing</li>
-    </ul>
-    
-    <a href="https://github.com/Tboiii-123/fastapi-multi-tenant-projects" target="_blank" 
-       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
-       View on GitHub
-    </a>
-  </div>
-</div>
-
-<!-- OptimalVid Video API Project Card -->
-<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition mt-8">
-  <!-- Project Image -->
-  <div class="md:w-1/2 w-full">
-    <img src="img/Video_api.PNG" alt="OptimalVid Video API Project" class="w-full h-64 object-cover">
-  </div>
-
-  <!-- Project Details -->
-  <div class="p-6 md:w-1/2">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Video API (Express.js + TypeScript)</h3>
-    <p class="text-sm text-gray-500 mb-3">Express.js · TypeScript · TypeORM · SQLite · JWT · Swagger</p>
-
-    <!-- Overview -->
-    <p class="text-gray-700 mb-4">
-      Developed a RESTful API for managing videos with authentication using Express.js and TypeScript.
-      It includes secure user registration, login, and complete CRUD functionality for video resources
-      with search, filtering, and pagination support.
-    </p>
-
-    <!-- Features -->
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-      <li>Implemented JWT-based authentication for secure access control</li>
-      <li>Full CRUD functionality for videos with genre filtering and pagination</li>
-      <li>Integrated Swagger for automatic API documentation</li>
-      <li>Utilized TypeORM with SQLite for efficient data persistence</li>
-      <li>Wrote unit and integration tests using Jest and Supertest</li>
-    </ul>
-
-    <a href="https://github.com/Tboiii-123/optimalvid-video-api-task" target="_blank" 
-       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
-       View on GitHub
-    </a>
-  </div>
-</div>
-
-
-
-<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-  <!-- Project Image -->
-  <div class="md:w-1/2 w-full">
-    <img src="img/ecom.PNG" alt="E-commerce App" class="w-full h-64 object-cover">
-  </div>
-  
-  <!-- Project Details -->
-  <div class="p-6 md:w-1/2">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-2">E-Commerce Web Application</h3>
-    <p class="text-sm text-gray-500 mb-3">Django REST API · React · PostgreSQL · Tailwind</p>
-    
-    <!-- Overview -->
-    <p class="text-gray-700 mb-4">
-      A modern e-commerce platform with secure payments, product management, 
-      and a seamless shopping experience powered by Django REST API and React.
-    </p>
-    
-    <!-- Features -->
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-      <li>Built RESTful backend with Django for scalable API services</li>
-      <li>Integrated React frontend with Tailwind UI for a smooth UX</li>
-      <li>User authentication & role-based authorization (admin, customer)</li>
-      <li>Shopping cart & order management with real-time updates</li>
-      <li>Stripe payment integration for secure online checkout</li>
-      <li>Admin dashboard for products, categories, and inventory</li>
-      <li>Optimized queries & caching for fast product browsing</li>
-    </ul>
-    
-    <a href="https://github.com/Tboiii-123/Ecommerce-Webiste" target="_blank" 
-       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
-       View on GitHub
-    </a>
-  </div>
-</div>
-
-<!-- Project -->
-
-<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-  <!-- Project Image -->
-  <div class="md:w-1/2 w-full">
-    <img src="img/chatty.PNG" alt="Django Chat Application" class="w-full h-64 object-cover">
-  </div>
-  
-  <!-- Project Details -->
-  <div class="p-6 md:w-1/2">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Django Real-time Chat Application</h3>
-    <p class="text-sm text-gray-500 mb-3">Django · Tailwind · SQLite · JavaScript (Voice Notes)</p>
-    
-    <!-- Overview -->
-    <p class="text-gray-700 mb-4">
-      A real-time chat system built with Django and Tailwind CSS. 
-      It supports text and voice messaging, friend lists, unread message counts, 
-      and user profile management in a clean and responsive interface.
-    </p>
-    
-    <!-- Features -->
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-      <li>User authentication (sign up, login, logout)</li>
-      <li>Profile pages with image, name, and contact info</li>
-      <li>Friends list with last message preview & unread count</li>
-      <li>Messaging: text + voice notes (record & playback)</li>
-      <li>Django Q objects to fetch conversations both ways</li>
-      <li>Settings: profile, language, help, logout</li>
-      <li>Responsive design with fixed navbar & user info card</li>
-    </ul>
-    
-    <a href="https://github.com/Tboiii-123/Chat-Application" target="_blank" 
-       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
-       View on GitHub
-    </a>
-  </div>
-</div>
-
-
-<!-- Project -->
-   <div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-  <!-- Project Image -->
-  <div class="md:w-1/2 w-full">
-    <img src="img/email.PNG" alt="Email Automation App" class="w-full h-64 object-cover">
-  </div>
-  
-  <!-- Project Details -->
-  <div class="p-6 md:w-1/2">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Email Automation System</h3>
-    <p class="text-sm text-gray-500 mb-3">Django · Celery · Redis · SMTP · Tailwind</p>
-    
-    <!-- Overview -->
-    <p class="text-gray-700 mb-4">
-      A system for scheduling, sending, and tracking bulk email campaigns. 
-      Built with Django and Celery for background tasks, it ensures efficient 
-      and non-blocking email delivery with detailed reporting.
-    </p>
-    
-    <!-- Features -->
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-      <li>Implemented bulk and scheduled email sending with Celery & Redis</li>
-      <li>Integrated SMTP/PHPMailer for reliable email delivery</li>
-      <li>Asynchronous background processing to avoid blocking requests</li>
-      <li>Customizable email templates with dynamic placeholders</li>
-      <li>Delivery status tracking and bounce/error logging</li>
-      <li>Admin dashboard for campaign management and analytics</li>
-      <li>Optimized for scalability — handles thousands of emails without downtime</li>
-    </ul>
-    
-    <a href="https://github.com/Tboiii-123/Email-Automation" target="_blank" 
-       class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 text-sm">
-       View on GitHub
-    </a>
-  </div>
-</div>
-
-<!-- Project -->
-
-<div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-  <!-- Project Image -->
-  <div class="md:w-1/2 w-full">
-    <img src="img/PDF -AI.png" alt="Affiliate Platform" class="w-full h-64 object-cover">
-  </div>
-  
-  <!-- Project Details -->
-  <div class="p-6 md:w-1/2">
-    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Affiliate Platform</h3>
-    <p class="text-sm text-gray-500 mb-3">HTML · CSS · JavaScript · Supabase · Paystack</p>
-    
-    <!-- Overview -->
-    <p class="text-gray-700 mb-4">
-      A web-based affiliate platform where users register via referral links, make purchases, and track sales. 
-      The dashboard automatically updates the number of sales made by each affiliate.
-    </p>
-    
-    <!-- Features -->
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-      <li>User registration and authentication with Supabase</li>
-      <li>Affiliate referral tracking</li>
-      <li>Payment processing using Paystack API</li>
-      <li>Real-time sales dashboard</li>
-      <li>Frontend-only solution (no backend server required)</li>
-    </ul>
-    
-    <a href="https://affilate-hub-theta.vercel.app/login.html" target="_blank" 
-       class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-900 text-sm">
-       View Live
-    </a>
-  </div>
-</div>
-
 </section>
 
-<!-- Projects Section GUI Applications -->
-<section id="gui-projects" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h2 class="text-center text-red-600 text-3xl font-bold mb-12" data-aos="zoom-in">
-      GUI Applications
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Project Card -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up">
-        <img src="img/django_setup.PNG" alt="Django Setup Automation" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h5 class="text-lg font-semibold mb-3">Django Setup Automation Tool</h5>
-          <p class="text-gray-600 text-sm mb-4">
-            A TkBootstrap-powered GUI app that automates Django project setup — creating virtual environments, installing dependencies, and structuring projects with one click.
+<section id="projects" class="py-20 bg-secondary-dark border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-accent-cyan mb-12 border-b-2 border-cyan-400/50 inline-block pb-1 mx-auto block w-fit" data-aos="zoom-in">Featured Projects</h2>
+    
+    <div class="flex justify-center space-x-4 mb-10 text-lg font-semibold" id="project-tabs" data-aos="fade-up" data-aos-delay="200">
+        <button data-filter="backend" class="tab-btn px-6 py-2 rounded-full bg-accent-cyan text-primary-dark transition hover:opacity-80">Back End</button>
+        <button data-filter="frontend" class="tab-btn px-6 py-2 rounded-full bg-gray-700 text-text-light transition hover:bg-gray-600">Front End</button>
+        <button data-filter="gui" class="tab-btn px-6 py-2 rounded-full bg-gray-700 text-text-light transition hover:bg-gray-600">GUI Apps</button>
+    </div>
+
+    <div class="space-y-12" id="project-list">
+      
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="backend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/logistics.PNG" alt="Logistics App" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Logistics & Delivery System</h3>
+          <p class="text-sm text-accent-cyan mb-3 font-mono">Django · PostgreSQL · Chart.js · Tailwind</p>
+          
+          <p class="text-text-muted mb-4">
+            A logistics and delivery tracking platform built with Django, featuring a real-time KPI dashboard, secure authentication, and seamless shipment management.
           </p>
+          
+          <div class="flex gap-4">
+            <a href="https://github.com/Tboiii-123/Logistics-Project" target="_blank" 
+               class="px-5 py-2 bg-accent-cyan text-primary-dark rounded-full font-semibold text-sm hover:bg-cyan-500 transition transform hover:scale-105">
+               <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="backend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/swagger.PNG" alt="Multi-Tenant FastAPI Application" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Multi-Tenant FastAPI API</h3>
+          <p class="text-sm text-accent-cyan mb-3 font-mono">FastAPI · SQLAlchemy · PostgreSQL · JWT Auth</p>
+          <p class="text-text-muted mb-4">
+            A scalable multi-tenant API platform where organizations manage their users and data independently, designed with secure JWT authentication and database isolation.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://github.com/Tboiii-123/fastapi-multi-tenant-projects" target="_blank" 
+               class="px-5 py-2 bg-accent-cyan text-primary-dark rounded-full font-semibold text-sm hover:bg-cyan-500 transition transform hover:scale-105">
+               <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+      </div>
 
-          <a href="https://github.com/Tboiii-123/DjangoMaker" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
-            View Project →
+      
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="backend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/Video_api.PNG" alt="OptimalVid Video API Project" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Video API (Express.js/TS)</h3>
+          <p class="text-sm text-accent-cyan mb-3 font-mono">Express.js · TypeScript · TypeORM · JWT · Swagger</p>
+          <p class="text-text-muted mb-4">
+            A secure RESTful API for video management, featuring JWT authentication, full CRUD operations, and integrated Swagger documentation.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://github.com/Tboiii-123/optimalvid-video-api-task" target="_blank" 
+               class="px-5 py-2 bg-accent-cyan text-primary-dark rounded-full font-semibold text-sm hover:bg-cyan-500 transition transform hover:scale-105">
+               <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="backend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/ecom.PNG" alt="E-commerce App" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">E-Commerce Platform </h3>
+          <p class="text-sm text-accent-cyan mb-3 font-mono">Django  · Html · PostgreSQL · Stripe</p>
+          <p class="text-text-muted mb-4">
+            A modern e-commerce platform with secure payments, product management, and a seamless shopping experience powered by Django, Html and Javacsript.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://github.com/Tboiii-123/Ecommerce-Webiste" target="_blank" 
+               class="px-5 py-2 bg-accent-cyan text-primary-dark rounded-full font-semibold text-sm hover:bg-cyan-500 transition transform hover:scale-105">
+               <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="backend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/chatty.PNG" alt="Django Chat Application" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Real-time Chat App</h3>
+          <p class="text-sm text-accent-cyan mb-3 font-mono">Django · Tailwind · JavaScript (Voice Notes)</p>
+          <p class="text-text-muted mb-4">
+            A real-time chat system with friend lists, unread counts, and support for text and voice messaging in a responsive interface.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://github.com/Tboiii-123/Chat-Application" target="_blank" 
+               class="px-5 py-2 bg-accent-cyan text-primary-dark rounded-full font-semibold text-sm hover:bg-cyan-500 transition transform hover:scale-105">
+               <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="backend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/email.PNG" alt="Email Automation App" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Email Automation System</h3>
+          <p class="text-sm text-accent-cyan mb-3 font-mono">Django · Celery · Redis · Yagmail</p>
+          <p class="text-text-muted mb-4">
+            A scalable system for scheduling, sending, and tracking bulk email campaigns using Celery for efficient background processing.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://github.com/Tboiii-123/Email-Automation" target="_blank" 
+               class="px-5 py-2 bg-accent-cyan text-primary-dark rounded-full font-semibold text-sm hover:bg-cyan-500 transition transform hover:scale-105">
+               <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="backend frontend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/PDF -AI.png" alt="Affiliate Platform" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Affiliate Platform</h3>
+          <p class="text-sm text-accent-cyan mb-3 font-mono">HTML · JS · Supabase · Paystack</p>
+          <p class="text-text-muted mb-4">
+            A web-based affiliate platform with user registration via referral links, payment processing, and a real-time sales dashboard (Frontend solution with Supabase backend).
+          </p>
+          <div class="flex gap-4">
+            <a href="https://github.com/Tboiii-123/Affilate-Hub" target="_blank" 
+               class="px-5 py-2 bg-accent-cyan text-primary-dark rounded-full font-semibold text-sm hover:bg-cyan-500 transition transform hover:scale-105">
+               <i class="fab fa-github mr-2"></i>View Code
+            </a>
+            <a href="https://affilate-hub-theta.vercel.app/login.html" target="_blank" 
+               class="px-5 py-2 border-2 border-accent-cyan text-accent-cyan rounded-full font-semibold text-sm hover:bg-cyan-900/50 transition transform hover:scale-105">
+               <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-card bg-primary-dark rounded-xl shadow-2xl overflow-hidden border border-gray-800 hover:border-cyan-400/50 transition duration-300 transform hover:scale-[1.01]" data-aos="fade-up" data-category="gui">
+        <img src="img/django_setup.PNG" alt="Django Setup Automation" class="w-full h-48 object-cover transform hover:scale-105 transition duration-500">
+        <div class="p-5">
+          <h5 class="text-xl font-semibold mb-3 text-text-light">Django Setup Automation Tool</h5>
+          <p class="text-text-muted text-sm mb-4">
+            A TkBootstrap-powered GUI app that automates Django project setup, creating virtual environments, installing dependencies, and structuring projects with one click.
+          </p>
+          <a href="https://github.com/Tboiii-123/DjangoMaker" class="inline-block px-4 py-2 text-accent-cyan border border-accent-cyan rounded-full hover:bg-accent-cyan hover:text-primary-dark transition transform hover:scale-105">
+            <i class="fab fa-github mr-2"></i>View Project
           </a>
         </div>
       </div>
 
-      <!-- Project Card -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
-        <img src="img/translator.PNG" alt="Language Translator App" class="w-full h-48 object-cover">
+      <div class="project-card bg-primary-dark rounded-xl shadow-2xl overflow-hidden border border-gray-800 hover:border-cyan-400/50 transition duration-300 transform hover:scale-[1.01]" data-aos="fade-up" data-aos-delay="100" data-category="gui">
+        <img src="img/translator.PNG" alt="Language Translator App" class="w-full h-48 object-cover transform hover:scale-105 transition duration-500">
         <div class="p-5">
-          <h5 class="text-lg font-semibold mb-3">Language Translator App</h5>
-          <p class="text-gray-600 text-sm mb-4">
-  A modern TkBootstrap-based GUI app that translates text between 100+ languages in real time using the Google Translate API. Features a clean interface, instant translation, and easy language switching.
+          <h5 class="text-xl font-semibold mb-3 text-text-light">Language Translator App</h5>
+          <p class="text-text-muted text-sm mb-4">
+            A modern TkBootstrap-based GUI app that translates text between 100+ languages in real time using the Google Translate API.
+          </p>
+          <a href="https://github.com/Tboiii-123/Language-Translator" class="inline-block px-4 py-2 text-accent-cyan border border-accent-cyan rounded-full hover:bg-accent-cyan hover:text-primary-dark transition transform hover:scale-105">
+            <i class="fab fa-github mr-2"></i>View Project
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="frontend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/figma.PNG" alt="Figma Project" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Animated Website from Figma</h3>
+         
+          <p class="text-text-muted mb-4">
+           A pixel-perfect, animated website built from a Figma design, demonstrating strong CSS/Tailwind skills.
+        
+          </p>
+          <div class="flex gap-4">
+            <a href="Projects/Figma project/index.html" class="inline-block px-4 py-2 text-accent-cyan border border-accent-cyan rounded-full hover:bg-accent-cyan hover:text-primary-dark transition transform hover:scale-105">
+            <i class="fas fa-external-link-alt mr-2"></i>View Live
+          </a>
+          
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="frontend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/amaac.PNG" alt="Figma Project" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Islamic Website</h3>
+         
+          <p class="text-text-muted mb-4">
+  A beautifully designed Islamic website, featuring elegant layouts, responsive design, and interactive elements. Provides visitors with easy access to Quranic resources, prayer times, and Islamic knowledge while showcasing modern web design techniques using Tailwind CSS.
 </p>
 
-          <a href="https://github.com/Tboiii-123/Language-Translator" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
-            View Project →
+          <div class="flex gap-4">
+            <a href="https://amacc-phi.vercel.app/" class="inline-block px-4 py-2 text-accent-cyan border border-accent-cyan rounded-full hover:bg-accent-cyan hover:text-primary-dark transition transform hover:scale-105">
+            <i class="fas fa-external-link-alt mr-2"></i>View Live
           </a>
+          
+          </div>
         </div>
       </div>
+      
 
+
+<div class="project-card flex flex-col md:flex-row items-center bg-primary-dark rounded-2xl shadow-2xl overflow-hidden border border-gray-800 transition duration-300 hover:border-cyan-400/50 hover:shadow-cyan-500/10 transform hover:scale-[1.01]" data-aos="fade-up" data-category="frontend">
+        <div class="md:w-1/2 w-full">
+          <img src="img/logistics.PNG" alt="Logistics Project" class="w-full h-64 object-cover transform hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 md:w-1/2">
+          <h3 class="text-3xl font-bold text-text-light mb-2">Logistic Website Frontend</h3>
+         
+          <p class="text-text-muted mb-4">
+            The clean, responsive frontend design for a logistics tracking application, built with a modern framework.
+         
+          </p>
+          <div class="flex gap-4">
+            <a href="https://logistics-app-alpha.vercel.app/" class="inline-block px-4 py-2 text-accent-cyan border border-accent-cyan rounded-full hover:bg-accent-cyan hover:text-primary-dark transition transform hover:scale-105">
+            <i class="fas fa-external-link-alt mr-2"></i>View Live
+          </a>
+          
+          </div>
+        </div>
+      </div>
+      
+
+      
     </div>
   </div>
 </section>
 
+<footer id="contact" class="bg-primary-dark text-text-light py-20 border-t border-gray-800">
+  <div class="max-w-6xl mx-auto px-6 text-center">
 
-<!-- Projects Section  Froent End-->
-<section id="projects" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h2 class="text-center text-red-600 text-3xl font-bold mb-12" data-aos="zoom-in">
-      Front End Projects
+    <h2 class="text-4xl font-bold text-accent-cyan mb-4" data-aos="zoom-in">
+      Let's Build Something Great.
     </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Project Card -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up">
-        <img src="img/figma.PNG" alt="Figma Project" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h5 class="text-lg font-semibold mb-3">Animated Website from Figma</h5>
-          <a href="Projects/Figma project/index.html" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
-            View Website →
-          </a>
-        </div>
-      </div>
+    <p class="text-xl text-text-muted mb-8 max-w-2xl mx-auto" data-aos="zoom-in" data-aos-delay="200">
+      I’m actively looking for full-time roles and open to interesting freelance projects. Reach out, and let's discuss your idea!
+    </p>
 
-      <!-- Project Card -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
-        <img src="img/logistics.PNG" alt="Logistics Project" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h5 class="text-lg font-semibold mb-3">Logistic Website</h5>
-          <a href="https://logistics-app-alpha.vercel.app/" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
-            View Website →
-          </a>
-        </div>
-      </div>
-
-      <!-- Project Card -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
-        <img src="img/skilline.PNG" alt="Educational Website" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h5 class="text-lg font-semibold mb-3">Educational Website</h5>
-          <a href="Projects/Skilline project/index.html" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
-            View Website →
-          </a>
-        </div>
-      </div>
-
-      <!-- Project Card -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="600">
-        <img src="img/amaac.PNG" alt="Toy Website" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h5 class="text-lg font-semibold mb-3">Islamic website</h5>
-          <a href="https://amacc-phi.vercel.app/" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
-            View Website →
-          </a>
-        </div>
-      </div>
-      
-
-      
-      
-
-      <!-- Project Card -->
-      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="800">
-        <img src="img/restaurant.PNG" alt="Restaurant Website" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h5 class="text-lg font-semibold mb-3">Restaurant Website</h5>
-          <a href="Projects/Restaurant website/index.html" class="inline-block px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">
-            View Website →
-          </a>
-        </div>
-      </div>
-
+    <div class="mb-8 p-3 bg-green-900/50 text-green-400 rounded-lg inline-block border border-green-700" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-circle text-xs mr-2 animate-pulse"></i>
+        <span class="font-semibold">Open to New Opportunities</span> | Response Time: 24h
     </div>
-  </div>
-</section>
-<!-- Ends Here -->
 
-<!-- Footer Section -->
- <!-- Contact / Footer Section -->
-<footer id="contact" class="bg-gray-900 text-white py-16">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-
-    <!-- Divider -->
-    <hr class="w-1/2 mx-auto mb-8 border-gray-600">
-
-    <!-- Heading -->
-    <h2 class="text-3xl font-bold text-red-500 mb-4" data-aos="zoom-in">
-      Get In Touch
-    </h2>
-
-    <!-- Description -->
-    <p class="text-lg text-gray-300 mb-6" data-aos="zoom-in" data-aos-delay="200">
-      I’m open to full-time roles, freelance projects, or collaborations.  
-      Feel free to reach out via email or connect with me on LinkedIn & social media.
-    </p>
-
-    <!-- Email -->
-    <p class="mb-6 text-gray-200" data-aos="zoom-in" data-aos-delay="300">
-      📧 lawalhussein775@gmail.com
-    </p>
-
-    <!-- Action Buttons -->
-    <div class="flex justify-center gap-4 mb-10">
+    <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
       <a href="mailto:lawalhussein775@gmail.com"  data-aos="zoom-in" data-aos-delay="300"
-         class="px-5 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
-        Email Me
+         class="px-8 py-3 bg-accent-cyan text-primary-dark font-bold rounded-full text-lg hover:bg-cyan-500 transition shadow-lg transform hover:scale-105 duration-300">
+        <i class="fas fa-envelope mr-2"></i>Email Me Directly
       </a>
       <a href="https://www.linkedin.com/in/lawal-hussein/" target="_blank" data-aos="zoom-in" data-aos-delay="400"
-         class="px-5 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition">
-        LinkedIn
+         class="px-8 py-3 border-2 border-gray-600 text-text-light font-bold rounded-full text-lg hover:border-accent-cyan hover:text-accent-cyan transition transform hover:scale-105 duration-300">
+        <i class="fab fa-linkedin mr-2"></i>Connect on LinkedIn
       </a>
     </div>
 
-    <!-- Social Media -->
-    <div class="flex justify-center gap-6">
-      <a href="https://www.instagram.com/husseinlawal775/" target="_blank">
-        <img src="img/instagram.png" alt="Instagram" class="w-8 h-8 hover:scale-110 transition">
+    <div class="flex justify-center gap-8 text-3xl">
+      <a href="https://www.linkedin.com/in/lawal-hussein/" target="_blank" class="text-gray-400 hover:text-accent-cyan transition transform hover:scale-125 duration-300">
+        <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/Tboiii-123" target="_blank">
-        <img src="img/github.png" alt="GitHub" class="w-8 h-8 hover:scale-110 transition">
+      <a href="https://github.com/Tboiii-123" target="_blank" class="text-gray-400 hover:text-accent-cyan transition transform hover:scale-125 duration-300">
+        <i class="fab fa-github"></i>
       </a>
-      <a href="#">
-        <img src="img/whatsapp.png" alt="WhatsApp" class="w-8 h-8 hover:scale-110 transition">
+      <a href="https://www.instagram.com/husseinlawal775/" target="_blank" class="text-gray-400 hover:text-accent-cyan transition transform hover:scale-125 duration-300">
+        <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.linkedin.com/in/lawal-hussein/" target="_blank">
-        <img src="img/linkedln.png" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition">
+      <a href="#" class="text-gray-400 hover:text-accent-cyan transition transform hover:scale-125 duration-300">
+        <i class="fab fa-whatsapp"></i>
       </a>
     </div>
 
-    <!-- Footer Note -->
-    <p class="mt-10 text-sm text-gray-500">
-      © 2023 Hussein Lawal. All Rights Reserved.
-
+    <p class="mt-12 text-sm text-text-muted">
+      Built with <i class="fas fa-heart text-red-500"></i> by Hussein Lawal | &copy; 2024.
     </p>
 
   </div>
 </footer>
 
 
-<!-- Script for toggle -->
 <script>
+  // Mobile Menu Toggle
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
   });
+
+  // Project Tabs Filtering
+  const tabs = document.querySelectorAll('.tab-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  const projectList = document.getElementById('project-list');
+
+  tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+          // Update active button styling
+          tabs.forEach(t => {
+              t.classList.remove('bg-accent-cyan', 'text-primary-dark');
+              t.classList.add('bg-gray-700', 'text-text-light');
+          });
+          tab.classList.add('bg-accent-cyan', 'text-primary-dark');
+          tab.classList.remove('bg-gray-700', 'text-text-light');
+          
+          const filter = tab.dataset.filter;
+          
+          // Show/Hide cards based on filter
+          projectCards.forEach(card => {
+              const categories = card.dataset.category.split(' ');
+              if (filter === 'all' || categories.includes(filter)) {
+                  card.style.display = 'flex'; // Show
+              } else {
+                  card.style.display = 'none'; // Hide
+              }
+          });
+          
+          // Optional: Force AOS refresh after filtering to apply entrance animations to newly visible items
+          setTimeout(() => {
+            AOS.refreshHard();
+          }, 50);
+      });
+  });
+  
+  // Set default filter to 'backend'
+  document.querySelector('.tab-btn[data-filter="backend"]').click(); 
 </script>
+
+<style>
+.animate-typing {
+    animation: typing 3s steps(35, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ADB5; }
+}
+
+/* Pulse animation for the availability status (using Tailwind's built-in pulse, but defined here for clarity if needed) */
+/* .animate-pulse is a standard Tailwind class */
+
+</style>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800, // Slightly faster, snappier fade-in
+      once: true,
+      easing: 'ease-in-out' // Smoother animation curve
+    });
   </script>
   
 </body>
